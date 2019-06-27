@@ -10,8 +10,8 @@ export default function Video() {
     <div className="video-wrapper">
       {videos.map(video => (
         <div className="video-player">
-          <Avatar thumbnail={video.poster.thumbnail} />
           <h3 className="video-title">{video.contentTitle}</h3>
+
           <MedalPlayer
             content={video}
             user={video.poster.displayName}
@@ -24,6 +24,12 @@ export default function Video() {
               retry: true
             }}
           />
+          <div className="video-description">
+            <Avatar thumbnail={video.poster.thumbnail} />
+            <p className="uploader">
+              uploaded by <span>{video.poster.displayName}</span>
+            </p>
+          </div>
         </div>
       ))}
     </div>

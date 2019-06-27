@@ -3,12 +3,32 @@
   margin: 5px auto;
 }
 
-.video-title {
-  padding: 15px;
+.video-description {
+  display: flex;
   background-color: #141c3a;
+  padding: 15px;
+  align-items: center;
+}
+
+.video-title,
+.uploader {
   color: #b08d57;
 }
 
+.uploader {
+  padding-left: 15px;
+}
+.uploader > span {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.video-title {
+  background-color: #141c3a;
+  padding: 15px;
+}
+
 .video-player {
-  margin-bottom: 10px;
+  padding: 5px 0 5px 0;
+  border-bottom: #c0c0c0 dashed 2px;
 }
