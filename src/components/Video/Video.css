@@ -3,6 +3,12 @@
   margin: 5px auto;
 }
 
+.video-title {
+  padding: 15px;
+  background-color: #141c3a;
+  color: #b08d57;
+}
+
 .video-player {
   margin-bottom: 10px;
 }
