@@ -38,7 +38,7 @@ a {
   margin-right: 5px;
 }
 
-#header-nav button {
+#header-nav a {
   margin-left: 5px;
   padding: 14px;
   text-transform: uppercase;
@@ -50,7 +50,7 @@ a {
   transition: 0.8s;
 }
 
-#header-nav button:hover {
+#header-nav a:hover {
   color: #c0c0c0;
   background-color: #b87333;
 }
