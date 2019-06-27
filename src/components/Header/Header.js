@@ -13,9 +13,9 @@ export default function Header() {
         </a>
       </div>
       <nav id="header-nav">
-        <a href="#">Home</a>
-        <a href="#">My Clips</a>
-        <a href="#">Support</a>
+        <a href="/">Home</a>
+        <a href="/">My Clips</a>
+        <a href="/">Support</a>
       </nav>
     </header>
   );
