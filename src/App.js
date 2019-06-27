@@ -9,11 +9,10 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <h1 style={{ textAlign: "center" }}>Main section</h1>
+        <h1 style={{ textAlign: "center" }}>Trending Clips</h1>
         <MedalPlayer
           content={videos[0]}
           user={videos[0].poster.displayName}
-          videoRef={ref => (this.video = ref)}
           videoOpts={{
             autoplay: true, // should the video autoplay?
             loop: true, // should the video loop?
