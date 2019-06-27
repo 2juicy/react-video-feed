@@ -12,6 +12,7 @@ export default function Header() {
           </div>
         </a>
       </div>
+      {/* Use react router here */}
       <nav id="header-nav">
         <a href="/">Home</a>
         <a href="/">My Clips</a>
