@@ -8,18 +8,20 @@ export default function Video() {
   return (
     <div className="video-wrapper">
       {videos.map(video => (
-        <MedalPlayer
-          content={video}
-          user={video.poster.displayName}
-          videoOpts={{
-            autoplay: true, // should the video autoplay?
-            loop: true, // should the video loop?
-            muted: true, // is the video muted by default?
-            controls: true, // are the video controls enabled?
-            embedded: true, // is this an embedded player? should we include all branding components and enable player.js events?
-            retry: true // if the video fails to load, for whatever reason, retry video.play() up to 10 times
-          }}
-        />
+        <div className="video-player">
+          <MedalPlayer
+            content={video}
+            user={video.poster.displayName}
+            videoOpts={{
+              autoplay: true, // should the video autoplay?
+              loop: true, // should the video loop?
+              muted: true, // is the video muted by default?
+              controls: true, // are the video controls enabled?
+              embedded: true, // is this an embedded player? should we include all branding components and enable player.js events?
+              retry: true // if the video fails to load, for whatever reason, retry video.play() up to 10 times
+            }}
+          />
+        </div>
       ))}
     </div>
   );

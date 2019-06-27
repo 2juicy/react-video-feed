@@ -2,3 +2,7 @@
   width: calc(0.9 * 100vw);
   margin: 5px auto;
 }
+
+.video-player {
+  margin-bottom: 10px;
+}
