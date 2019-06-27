@@ -6,11 +6,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {/* Could make different pages for this section */}
-      <main>
-        <h1 style={{ textAlign: "center" }}>Trending Clips</h1>
-        <Video />
-      </main>
+      <h1 className="page-title">Top Clips</h1>
+      <Video />
     </div>
   );
 }

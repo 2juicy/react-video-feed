@@ -20,6 +20,7 @@ a {
 
 .header-title h1 {
   color: #c0c0c0;
+  text-shadow: gold 1px 0 5px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -43,6 +44,7 @@ a {
   padding: 14px;
   text-transform: uppercase;
   color: #b08d57;
+  text-shadow: #c0c0c0 1px 0 5px;
   background-color: #16161d;
   cursor: pointer;
   border: #b87333 1px solid;

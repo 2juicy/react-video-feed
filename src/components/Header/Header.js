@@ -14,9 +14,8 @@ export default function Header() {
       </div>
       {/* Use react router here */}
       <nav id="header-nav">
-        <a href="/">Home</a>
-        <a href="/">Trending</a>
-        <a href="/">Support</a>
+        <a href="/">Login</a>
+        <a href="/">Sign Up</a>
       </nav>
     </header>
   );
