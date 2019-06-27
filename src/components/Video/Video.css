@@ -1,0 +1,4 @@
+.video-wrapper {
+  width: calc(0.9 * 100vw);
+  margin: 5px auto;
+}

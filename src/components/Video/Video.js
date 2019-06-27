@@ -5,7 +5,7 @@ import MedalPlayer from "medal-video-player";
 
 export default function Video() {
   return (
-    <div>
+    <div className="video-wrapper">
       <MedalPlayer
         content={videos[0]}
         user={videos[0].poster.displayName}
