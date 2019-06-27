@@ -1,10 +1,14 @@
 import React from "react";
-import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <p>Test</p>
+      <header>
+        <h1>Nav</h1>
+      </header>
+      <main>
+        <h1>Main</h1>
+      </main>
     </div>
   );
 }
