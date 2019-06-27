@@ -1,0 +1,32 @@
+.video-navbar {
+  margin: 0px 7% 5px 7%;
+  padding: 5px 5px 5px 5px;
+  height: 30px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: #c0c0c0 dashed 0.5px;
+  border-radius: 5px;
+}
+
+.video-routes a {
+  padding: 15px;
+  color: #cd7f32;
+  text-shadow: 0 0 10px #c0c0c0;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#video-search {
+  height: 30px;
+  background-color: #c0c0c0;
+  color: #16181d;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 1em 3px 3px;
+}

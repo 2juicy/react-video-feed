@@ -10,8 +10,12 @@ body {
 }
 
 .page-title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 28px;
+  text-transform: uppercase;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #c0c0c0;
   text-shadow: gold 1px 0 5px;
+  margin-bottom: 5px;
 }
