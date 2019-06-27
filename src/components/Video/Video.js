@@ -1,5 +1,6 @@
 import React from "react";
 import "./Video.css";
+// Without a backend to make API calls we pull the .json file with import.
 import videos from "../../videos.json";
 import MedalPlayer from "medal-video-player";
 
