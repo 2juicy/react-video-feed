@@ -2,7 +2,7 @@ import React from "react";
 
 const styles = {
   display: "inline-block",
-  border: "black 1px solid",
+  padding: "5px",
   borderRadius: "999px",
   height: "55px",
   width: "55px"

@@ -9,12 +9,20 @@ export default function Video() {
   return (
     <div className="video-wrapper">
       {videos.map(video => (
-        <div className="video-player">
+        <div className="video-player" key={video.contentId}>
+          <div className="video-poster">
+            <Avatar thumbnail={video.poster.thumbnail} />
+            <div className="uploader">
+              <p>
+                uploaded by <span>{video.poster.displayName}</span>
+              </p>
+              <p>{video.poster.slogan}</p>
+            </div>
+          </div>
           <h3 className="video-title">{video.contentTitle}</h3>
 
           <MedalPlayer
             content={video}
-            user={video.poster.displayName}
             videoOpts={{
               autoplay: false,
               loop: true,
@@ -24,12 +32,6 @@ export default function Video() {
               retry: true
             }}
           />
-          <div className="video-description">
-            <Avatar thumbnail={video.poster.thumbnail} />
-            <p className="uploader">
-              uploaded by <span>{video.poster.displayName}</span>
-            </p>
-          </div>
         </div>
       ))}
     </div>

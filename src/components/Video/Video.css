@@ -3,10 +3,10 @@
   margin: 5px auto;
 }
 
-.video-description {
+.video-poster {
   display: flex;
   background-color: #141c3a;
-  padding: 15px;
+  padding: 5px;
   align-items: center;
 }
 
@@ -15,20 +15,22 @@
   color: #b08d57;
 }
 
-.uploader {
-  padding-left: 15px;
-}
-.uploader > span {
+.uploader p > span {
   font-weight: bolder;
   font-size: 18px;
 }
 
+.uploader p:nth-of-type(2) {
+  font-style: italic;
+  font-size: 12px;
+}
+
 .video-title {
   background-color: #141c3a;
-  padding: 15px;
+  padding: 10px;
 }
 
 .video-player {
-  padding: 5px 0 5px 0;
-  border-bottom: #c0c0c0 dashed 2px;
+  margin: 15px 0 15px 0;
+  border-bottom: #c0c0c0 solid 5px;
 }
