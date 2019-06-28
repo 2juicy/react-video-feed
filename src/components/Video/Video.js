@@ -10,16 +10,17 @@ export default function Video() {
     <div className="video-wrapper">
       {videos.map(video => (
         <div className="video-player" key={video.contentId}>
-          <div className="video-poster">
-            <Avatar thumbnail={video.poster.thumbnail} />
-            <div className="uploader">
-              <p>
-                uploaded by <span>{video.poster.displayName}</span>
-              </p>
-              <p>{video.poster.slogan}</p>
+          <div>
+            <div className="video-poster">
+              <Avatar thumbnail={video.poster.thumbnail} />
+              <div className="uploader">
+                <p>
+                  uploaded by <span>{video.poster.displayName}</span>
+                </p>
+                <p>{video.poster.slogan}</p>
+              </div>
             </div>
           </div>
-
           <h3 className="video-title">{video.contentTitle}</h3>
 
           <MedalPlayer
