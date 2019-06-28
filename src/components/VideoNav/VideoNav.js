@@ -6,9 +6,9 @@ export default function VideoNav() {
     <div className="video-navbar">
       <div className="video-routes">
         <a href="/">About</a>
-        <a href="/">Popular</a>
         <a href="/">Trending</a>
         <a href="/">Browse</a>
+        <a href="/">Discord</a>
       </div>
 
       <input id="video-search" label="Search" placeholder="Search" />

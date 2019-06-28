@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <VideoNav />
-      <h2 className="page-title">Top Clips of the Week</h2>
+      <h2 className="page-title">Trending Clips</h2>
       <Video />
     </div>
   );
