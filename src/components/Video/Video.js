@@ -15,7 +15,7 @@ export default function Video() {
             content={video}
             videoOpts={{
               autoplay: false,
-              loop: true,
+              loop: false,
               muted: false,
               controls: true,
               embedded: true,
