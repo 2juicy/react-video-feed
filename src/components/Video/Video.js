@@ -19,6 +19,7 @@ export default function Video() {
               <p>{video.poster.slogan}</p>
             </div>
           </div>
+
           <h3 className="video-title">{video.contentTitle}</h3>
 
           <MedalPlayer
@@ -32,6 +33,15 @@ export default function Video() {
               retry: true
             }}
           />
+          <div className="likes-comments-share">
+            <div className="likes-comments">
+              <p>{video.likes} likes</p>
+              <p>{video.comments} comments</p>
+              <p>{video.views} views</p>
+            </div>
+
+            <button className="share">Copy Link</button>
+          </div>
         </div>
       ))}
     </div>
