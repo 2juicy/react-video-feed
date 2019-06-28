@@ -1,6 +1,6 @@
 # Medal TV React Code Exercise
 
-Thank you for applying to Medal! Congratulations on getting this far into the application process. This exercise is designed to expose our development team to your code style and UI/UX intuitions.
+Started on 6/26/2019
 
 ## Specification
 
@@ -8,15 +8,15 @@ We would like to see your version of a video feed. Medal has a video feed, but d
 
 ### Requirements
 
-- List all video objects using our video player
-- A user should be able to play the individual videos within the feed
+- [x] List all video objects using our video player
+- [x] A user should be able to play the individual videos within the feed
 
 ### Technology Requirements
 
-- Use ReactJS
-- Use our provided video player, reference the readme file within the zip file for additional information (hint: videoOpts is a required prop)
-- The app server must be able to be ran using this command:
-  `npm install && npm run start`
+- [x] Use ReactJS
+- [x] Use our provided video player, reference the readme file within the zip file for additional information (hint: videoOpts is a required prop)
+- [x] The app server must be able to be ran using this command:
+      `npm install && npm run start`
 
 ### Submitting Work
 
@@ -25,3 +25,9 @@ Feel free to clone this repo or download the two required parts (the Medal Video
 #### Can I use tools like NextJS or Create React App?
 
 Yes absolutely, use any tool you would like as long as it allows you to follow the technology requirements.
+
+#### Feature Ideas
+
+- Infinite scrolling to load more videos as the user scrolls down.
+- Copy to clipboard feature can be achieved easily with React library.
+- Make video player responsive with mobile devices.
