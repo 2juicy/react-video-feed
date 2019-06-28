@@ -10,8 +10,8 @@ export default function Video() {
     <div className="video-wrapper">
       {videos.map(video => (
         <div className="video-player" key={video.contentId}>
-          <div>
-            <div className="video-poster">
+          <div className="video-poster">
+            <div style={{ display: "flex", alignItems: "center" }}>
               <Avatar thumbnail={video.poster.thumbnail} />
               <div className="uploader">
                 <p>
@@ -20,7 +20,16 @@ export default function Video() {
                 <p>{video.poster.slogan}</p>
               </div>
             </div>
+            <div className="uploader-stats">
+              <p>
+                <span>{video.poster.followers}</span> followers
+              </p>
+              <p>
+                <span>{video.poster.upvotes}</span> upvotes
+              </p>
+            </div>
           </div>
+
           <h3 className="video-title">{video.contentTitle}</h3>
 
           <MedalPlayer
@@ -36,9 +45,15 @@ export default function Video() {
           />
           <div className="likes-comments-share">
             <div className="likes-comments">
-              <p>{video.likes} likes</p>
-              <p>{video.comments} comments</p>
-              <p>{video.views} views</p>
+              <p>
+                <span>{video.likes}</span> likes
+              </p>
+              <p>
+                <span>{video.comments}</span> comments
+              </p>
+              <p>
+                <span>{video.views}</span> views
+              </p>
             </div>
 
             <button className="share">Copy Link</button>
