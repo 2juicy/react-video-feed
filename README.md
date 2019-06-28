@@ -30,4 +30,4 @@ Yes absolutely, use any tool you would like as long as it allows you to follow t
 
 - Infinite scrolling to load more videos as the user scrolls down.
 - Copy to clipboard feature can be achieved easily with React library.
-- Make video player responsive with mobile devices.
+- [x] Showing video controlls causes extra spacing to the right, look for a fix.

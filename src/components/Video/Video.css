@@ -7,6 +7,7 @@ span {
   width: calc(0.75 * 100vw);
   margin: 5px auto;
   color: #b08d57;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .video-poster {
@@ -68,15 +69,18 @@ span {
   span {
     font-size: 16px;
   }
-
   p {
     font-size: 13px;
   }
   .video-wrapper {
     width: 100%;
   }
-
   .video-title {
     padding: 5px;
+  }
+
+  /* Only way I can think of to make responsive on tiny devices */
+  #controlButton {
+    width: 20px !important;
   }
 }
