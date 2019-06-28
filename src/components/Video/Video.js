@@ -10,6 +10,37 @@ export default function Video() {
     <div className="video-wrapper">
       {videos.map(video => (
         <div className="video-player" key={video.contentId}>
+          <h3 className="video-title">{video.contentTitle}</h3>
+          <MedalPlayer
+            content={video}
+            videoOpts={{
+              autoplay: false,
+              loop: true,
+              muted: true,
+              controls: true,
+              embedded: true,
+              retry: true
+            }}
+          />
+
+          {/* Likes, comments, share section */}
+          <div className="likes-comments-share">
+            <div className="likes-comments">
+              <p>
+                <span>{video.likes}</span> likes
+              </p>
+              <p>
+                <span>{video.comments}</span> comments
+              </p>
+              <p>
+                <span>{video.views}</span> views
+              </p>
+            </div>
+
+            <button className="share">Copy Link</button>
+          </div>
+
+          {/* Uploader section */}
           <div className="video-poster">
             <div style={{ display: "flex", alignItems: "center" }}>
               <Avatar thumbnail={video.poster.thumbnail} />
@@ -28,35 +59,6 @@ export default function Video() {
                 <span>{video.poster.upvotes}</span> upvotes
               </p>
             </div>
-          </div>
-
-          <h3 className="video-title">{video.contentTitle}</h3>
-
-          <MedalPlayer
-            content={video}
-            videoOpts={{
-              autoplay: false,
-              loop: true,
-              muted: true,
-              controls: true,
-              embedded: true,
-              retry: true
-            }}
-          />
-          <div className="likes-comments-share">
-            <div className="likes-comments">
-              <p>
-                <span>{video.likes}</span> likes
-              </p>
-              <p>
-                <span>{video.comments}</span> comments
-              </p>
-              <p>
-                <span>{video.views}</span> views
-              </p>
-            </div>
-
-            <button className="share">Copy Link</button>
           </div>
         </div>
       ))}
