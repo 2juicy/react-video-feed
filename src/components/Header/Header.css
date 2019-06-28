@@ -57,3 +57,23 @@ a {
   color: #c0c0c0;
   background-color: #b87333;
 }
+
+@media only screen and (max-width: 768px) {
+  .header-title h1 {
+    text-shadow: gold 1px 0 1px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .header-title a img {
+    height: 45px;
+    border: #b08d57 1px solid;
+    border-radius: 20px;
+  }
+
+  #header-nav a {
+    font-size: 12px;
+    padding: 5px;
+    margin-left: 2px;
+  }
+}

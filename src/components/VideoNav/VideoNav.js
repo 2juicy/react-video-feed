@@ -10,9 +10,8 @@ export default function VideoNav() {
         <a href="/">Trending</a>
         <a href="/">Browse</a>
       </div>
-      <div className="search-bar">
-        <input id="video-search" label="Search" placeholder="Search Clips..." />
-      </div>
+
+      <input id="video-search" label="Search" placeholder="Search" />
     </div>
   );
 }
