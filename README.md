@@ -24,6 +24,6 @@ We would like to see your version of a video feed. Medal has a video feed, but d
 
 #### Feature Ideas
 
-- Infinite scrolling to load more videos as the user scrolls down.
-- Copy to clipboard feature can be achieved easily with React library.
+- [ ] Infinite scrolling to load more videos as the user scrolls down.
+- [ ] Copy to clipboard feature can be achieved easily with React library.
 - [x] Showing video controlls causes extra spacing to the right, look for a fix.
