@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/medal-react-exercise/precache-manifest.dd2967c9d88416c385549492b5f1631a.js"
+  "/medal-react-exercise/precache-manifest.fff169577615183c9c52bb2491c528d2.js"
 );
 
 self.addEventListener('message', (event) => {
