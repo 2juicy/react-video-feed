@@ -13,6 +13,7 @@ export default function Video() {
           <h3 className="video-title">{video.contentTitle}</h3>
           <MedalPlayer
             content={video}
+            user={video.poster}
             videoOpts={{
               autoplay: false,
               loop: false,
