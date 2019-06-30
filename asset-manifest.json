@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/medal-react-exercise/static/css/main.f2f4d580.chunk.css",
+    "main.css": "/medal-react-exercise/static/css/main.2a5cb3aa.chunk.css",
     "main.js": "/medal-react-exercise/static/js/main.50c53ca4.chunk.js",
     "main.js.map": "/medal-react-exercise/static/js/main.50c53ca4.chunk.js.map",
     "runtime~main.js": "/medal-react-exercise/static/js/runtime~main.b652e298.js",
@@ -8,8 +8,8 @@
     "static/js/2.2216a872.chunk.js": "/medal-react-exercise/static/js/2.2216a872.chunk.js",
     "static/js/2.2216a872.chunk.js.map": "/medal-react-exercise/static/js/2.2216a872.chunk.js.map",
     "index.html": "/medal-react-exercise/index.html",
-    "precache-manifest.598274470e733d9be981e6a12c01a649.js": "/medal-react-exercise/precache-manifest.598274470e733d9be981e6a12c01a649.js",
+    "precache-manifest.c57de30eab25d0a7bb8577a38b341abe.js": "/medal-react-exercise/precache-manifest.c57de30eab25d0a7bb8577a38b341abe.js",
     "service-worker.js": "/medal-react-exercise/service-worker.js",
-    "static/css/main.f2f4d580.chunk.css.map": "/medal-react-exercise/static/css/main.f2f4d580.chunk.css.map"
+    "static/css/main.2a5cb3aa.chunk.css.map": "/medal-react-exercise/static/css/main.2a5cb3aa.chunk.css.map"
   }
 }
