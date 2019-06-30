@@ -1,11 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Video.css";
 // Without a backend to make API calls we pull the .json file with import.
-import videos from "../../videos.json";
+import results from "../../videos.json";
 import MedalPlayer from "medal-video-player";
 import Avatar from "../Avatar/Avatar";
 
 export default function Video() {
+  const [videos, setVideos] = useState(results.slice(0, 10));
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  useEffect(() => {
+    if (!loading) return;
+    moreVideos();
+  }, [loading]);
+
+  function handleScroll() {
+    if (
+      window.innerHeight + window.pageYOffset + 100 <
+        document.documentElement.offsetHeight ||
+      loading
+    ) {
+      return;
+    } else setLoading(true);
+  }
+
+  function moreVideos() {
+    setVideos(prev => [
+      ...prev,
+      ...results.slice(prev.length, 10 + prev.length)
+    ]);
+    setLoading(false);
+  }
+
   return (
     <div className="video-wrapper">
       {videos.map(video => (
