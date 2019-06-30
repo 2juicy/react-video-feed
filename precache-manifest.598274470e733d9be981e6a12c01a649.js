@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "94c27fd5696b5e57d7f8d5f1607dde32",
+    "revision": "532a45704c01a2e0b1aadc8d0ced7620",
     "url": "/medal-react-exercise/index.html"
   },
   {
-    "revision": "77290d7f22580a51c26d",
-    "url": "/medal-react-exercise/static/css/main.b963f815.chunk.css"
+    "revision": "31097a69ade4891f3e13",
+    "url": "/medal-react-exercise/static/css/main.f2f4d580.chunk.css"
   },
   {
     "revision": "3ffc435400841909d784",
     "url": "/medal-react-exercise/static/js/2.2216a872.chunk.js"
   },
   {
-    "revision": "77290d7f22580a51c26d",
+    "revision": "31097a69ade4891f3e13",
     "url": "/medal-react-exercise/static/js/main.50c53ca4.chunk.js"
   },
   {
