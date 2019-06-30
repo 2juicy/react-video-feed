@@ -22,13 +22,22 @@
 #video-search {
   height: 30px;
   background-color: #c0c0c0;
-  color: #16181d;
+  color: #cd7f32;
   border: none;
   border-radius: 3px;
   box-sizing: border-box;
   font-size: 14px;
   font-weight: bold;
   padding: 3px 1em 3px 3px;
+  border: #cd7f32 solid 2px;
+}
+
+#video-search:focus {
+  border: red solid 2px;
+}
+
+#video-search:not(:placeholder-shown) {
+  border: #cd7f32 dashed 2px;
 }
 
 @media only screen and (max-width: 768px) {
