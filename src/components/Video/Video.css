@@ -53,6 +53,8 @@ span {
 }
 
 .share {
+  font-size: 16px;
+  font-weight: bold;
   color: inherit;
   padding: 5px;
   text-transform: uppercase;
@@ -62,11 +64,20 @@ span {
   border: #b87333 1px dotted;
   border-radius: 5px;
   transition: 0.8s;
+  box-shadow: 1px 3px #b87333;
 }
 
 .share:hover {
   color: #c0c0c0;
   background-color: #b87333;
+  box-shadow: 1px 3px #c0c0c0;
+}
+
+.share:active {
+  background-color: red;
+  box-shadow: 0px 1px #c0c0c0;
+  transform: translateY(2px) translateX(1px);
+  transition: 0ms;
 }
 
 @keyframes bganimation {
