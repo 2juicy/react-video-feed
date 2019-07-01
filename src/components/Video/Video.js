@@ -4,6 +4,7 @@ import "./Video.css";
 import results from "../../videos.json";
 import MedalPlayer from "medal-video-player";
 import Avatar from "../Avatar/Avatar";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export default function Video() {
   const [videos, setVideos] = useState(results.slice(0, 10));
@@ -68,8 +69,9 @@ export default function Video() {
                 <span>{video.views}</span> views
               </p>
             </div>
-
-            <button className="share">Copy Link</button>
+            <CopyToClipboard text={`https://medal.tv/clips/${video.contentId}`}>
+              <button className="share">Copy Link</button>
+            </CopyToClipboard>
           </div>
 
           {/* Uploader section */}
