@@ -22,10 +22,10 @@ We would like to see your version of a video feed. Medal has a video feed, but d
 - [x] The app server must be able to be ran using this command:
       `npm install && npm run start`
 
-#### Feature Ideas
+#### Extra Features
 
 - [x] Infinite scrolling to load more videos as the user scrolls down.
 - [x] Copy to clipboard feature can be achieved easily with React library.
-- [x] Showing video controlls causes extra spacing to the right, look for a fix.
+- [x] Responsive design
 
-Completed on 6/30/2019
+Extra features completed on 6/30/2019
