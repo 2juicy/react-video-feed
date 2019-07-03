@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/medal-react-exercise/static/css/main.9e560250.chunk.css",
-    "main.js": "/medal-react-exercise/static/js/main.bf484a91.chunk.js",
-    "main.js.map": "/medal-react-exercise/static/js/main.bf484a91.chunk.js.map",
-    "runtime~main.js": "/medal-react-exercise/static/js/runtime~main.b652e298.js",
-    "runtime~main.js.map": "/medal-react-exercise/static/js/runtime~main.b652e298.js.map",
-    "static/js/2.58697a4f.chunk.js": "/medal-react-exercise/static/js/2.58697a4f.chunk.js",
-    "static/js/2.58697a4f.chunk.js.map": "/medal-react-exercise/static/js/2.58697a4f.chunk.js.map",
-    "index.html": "/medal-react-exercise/index.html",
-    "precache-manifest.8e1bfe4a3f3973c860e09494b445a847.js": "/medal-react-exercise/precache-manifest.8e1bfe4a3f3973c860e09494b445a847.js",
-    "service-worker.js": "/medal-react-exercise/service-worker.js",
-    "static/css/main.9e560250.chunk.css.map": "/medal-react-exercise/static/css/main.9e560250.chunk.css.map"
+    "main.css": "/react-video-feed/static/css/main.9e560250.chunk.css",
+    "main.js": "/react-video-feed/static/js/main.1c5ee50e.chunk.js",
+    "main.js.map": "/react-video-feed/static/js/main.1c5ee50e.chunk.js.map",
+    "runtime~main.js": "/react-video-feed/static/js/runtime~main.10981a54.js",
+    "runtime~main.js.map": "/react-video-feed/static/js/runtime~main.10981a54.js.map",
+    "static/js/2.2a614545.chunk.js": "/react-video-feed/static/js/2.2a614545.chunk.js",
+    "static/js/2.2a614545.chunk.js.map": "/react-video-feed/static/js/2.2a614545.chunk.js.map",
+    "index.html": "/react-video-feed/index.html",
+    "precache-manifest.71d611cdac584021766b405a78f2814b.js": "/react-video-feed/precache-manifest.71d611cdac584021766b405a78f2814b.js",
+    "service-worker.js": "/react-video-feed/service-worker.js",
+    "static/css/main.9e560250.chunk.css.map": "/react-video-feed/static/css/main.9e560250.chunk.css.map"
   }
 }
