@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-video-feed/static/css/main.bfc23f2d.chunk.css",
-    "main.js": "/react-video-feed/static/js/main.a15eaa70.chunk.js",
-    "main.js.map": "/react-video-feed/static/js/main.a15eaa70.chunk.js.map",
+    "main.css": "/react-video-feed/static/css/main.d25fb462.chunk.css",
+    "main.js": "/react-video-feed/static/js/main.18abb197.chunk.js",
+    "main.js.map": "/react-video-feed/static/js/main.18abb197.chunk.js.map",
     "runtime~main.js": "/react-video-feed/static/js/runtime~main.10981a54.js",
     "runtime~main.js.map": "/react-video-feed/static/js/runtime~main.10981a54.js.map",
     "static/js/2.2a614545.chunk.js": "/react-video-feed/static/js/2.2a614545.chunk.js",
     "static/js/2.2a614545.chunk.js.map": "/react-video-feed/static/js/2.2a614545.chunk.js.map",
     "index.html": "/react-video-feed/index.html",
-    "precache-manifest.30633c82548d66ae25c9c131ce128dd5.js": "/react-video-feed/precache-manifest.30633c82548d66ae25c9c131ce128dd5.js",
+    "precache-manifest.42ecf1504e1f012da63dc37350d83bf8.js": "/react-video-feed/precache-manifest.42ecf1504e1f012da63dc37350d83bf8.js",
     "service-worker.js": "/react-video-feed/service-worker.js",
-    "static/css/main.bfc23f2d.chunk.css.map": "/react-video-feed/static/css/main.bfc23f2d.chunk.css.map"
+    "static/css/main.d25fb462.chunk.css.map": "/react-video-feed/static/css/main.d25fb462.chunk.css.map"
   }
 }
