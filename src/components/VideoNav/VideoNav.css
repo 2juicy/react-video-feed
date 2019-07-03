@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: center;
   border: #c0c0c0 dashed 0.5px;
+  transition: box-shadow 0.6s linear;
   border-radius: 5px;
 }
 
@@ -29,16 +30,19 @@
   background-color: transparent;
   color: #cd7f32;
   border: none;
+  outline: none;
   border-radius: 3px;
   box-sizing: border-box;
   font-size: 14px;
   font-weight: bold;
   padding: 3px 1em 3px 3px;
   border-bottom: #cd7f32 solid 2px;
+  transition: box-shadow 0.6s linear;
 }
 
 #video-search:focus {
   border-bottom: red solid 2px;
+  box-shadow: 0px 0px 0px 5px #cd7f32;
 }
 
 #video-search:not(:placeholder-shown) {
