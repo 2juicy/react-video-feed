@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header id="header-component">
       <div className="header-title">
-        <a href="/">
+        <a href="/#">
           <img alt="MedalTV" src="assets/logo.jpg" />
           <div>
             <h1>Medal</h1>
@@ -14,7 +14,7 @@ export default function Header() {
       </div>
       {/* Use react router here */}
       <nav id="header-nav">
-        <a href="/">Login</a>
+        <a href="/#">Login</a>
         <a href="https://medal.tv/download">Sign Up</a>
       </nav>
     </header>
