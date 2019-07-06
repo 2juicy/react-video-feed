@@ -49,18 +49,18 @@ a {
   margin-left: 5px;
   padding: 14px;
   text-transform: uppercase;
-  color: #b08d57;
-  text-shadow: #c0c0c0 1px 0 5px;
-  background-color: #16161d;
+  color: #c0c0c0;
+  font-weight: bolder;
+  background-size: 200%;
+  background-image: linear-gradient(to left, #b08d57, #ee5a24, #b08d57);
   cursor: pointer;
   border: #b87333 1px solid;
   border-radius: 5px;
-  transition: 0.8s;
+  transition: 0.6s;
 }
 
 #header-nav a:hover {
-  color: #c0c0c0;
-  background-color: #b87333;
+  background-position: right;
 }
 
 @media only screen and (max-width: 768px) {
