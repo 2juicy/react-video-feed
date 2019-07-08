@@ -66,6 +66,7 @@ span {
   transition: 0.8s;
   box-shadow: 1px 3px #b87333;
   margin-bottom: 3px;
+  outline: none;
 }
 
 .share:hover {
