@@ -28,7 +28,7 @@
 #video-search {
   height: 30px;
   background-color: transparent;
-  color: #cd7f32;
+  color: #c0c0c0;
   outline: none;
   border: none;
   border-bottom: #cd7f32 solid 2px;
@@ -40,13 +40,17 @@
   transition: box-shadow 0.6s linear;
 }
 
+#video-search::placeholder {
+  color: #c0c0c0;
+}
+
 #video-search:focus {
-  border-bottom: red solid 2px;
+  border-bottom: #c0c0c0 solid 2px;
   box-shadow: 0px 0px 0px 5px #cd7f32;
 }
 
 #video-search:not(:placeholder-shown) {
-  border-bottom: #cd7f32 dashed 2px;
+  border-bottom: #c0c0c0 dashed 2px;
 }
 
 @media only screen and (max-width: 768px) {
