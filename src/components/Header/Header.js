@@ -15,7 +15,13 @@ export default function Header() {
       {/* Use react router here */}
       <nav id="header-nav">
         <a href="#0">Login</a>
-        <a href="https://medal.tv/download">Sign Up</a>
+        <a
+          href="https://medal.tv/download"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sign Up
+        </a>
       </nav>
     </header>
   );
