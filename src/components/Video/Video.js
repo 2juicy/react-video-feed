@@ -11,7 +11,9 @@ export default function Video() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    if (videos.length < 50) {
+      window.addEventListener("scroll", handleScroll);
+    }
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
@@ -96,6 +98,15 @@ export default function Video() {
           </div>
         </div>
       ))}
+
+      {/* To top of page button only shows when all videos are loaded */}
+      {!loading && (
+        <div style={{ textAlign: "center", marginBottom: "1em" }}>
+          <button onClick={() => window.scrollTo(0, 0)} className="top">
+            Back to Top
+          </button>
+        </div>
+      )}
     </div>
   );
 }

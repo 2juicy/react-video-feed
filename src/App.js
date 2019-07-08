@@ -10,11 +10,6 @@ function App() {
       <VideoNav />
       <h2 className="page-title">Trending Clips</h2>
       <Video />
-      <div style={{ textAlign: "center", marginBottom: "1em" }}>
-        <button onClick={() => window.scrollTo(0, 0)} className="top">
-          Back to Top
-        </button>
-      </div>
     </div>
   );
 }
