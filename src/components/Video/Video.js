@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./Video.css";
-// Without a backend to make API calls we pull the .json file with import.
 import results from "../../videos.json";
 import MedalPlayer from "medal-video-player";
 import Avatar from "../Avatar/Avatar";
