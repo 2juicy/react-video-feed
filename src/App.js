@@ -9,9 +9,7 @@ function App() {
   useEffect(() => {
     (async function() {
       let res = await fetch("videos.json");
-      if (!res.ok) {
-        throw new Error("Failed to fetch");
-      }
+      if (!res.ok) throw new Error("Failed to fetch");
       let json = await res.json();
       setResults(json);
     })().catch(err => console.error(err));
