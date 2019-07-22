@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./Video.css";
-import results from "../../videos.json";
 import MedalPlayer from "medal-video-player";
 import Avatar from "../Avatar/Avatar";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-export default function Video() {
-  const [videos, setVideos] = useState(results.slice(0, 10));
-  const [loading, setLoading] = useState(false);
+export default function Video({ results }) {
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    setVideos(results.slice(0, 10));
+  }, [results]);
 
   useEffect(() => {
     if (videos.length < 50) {
@@ -16,19 +18,13 @@ export default function Video() {
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
-  useEffect(() => {
-    if (!loading) return;
-    moreVideos();
-  }, [loading]);
-
   function handleScroll() {
     if (
       window.innerHeight + window.pageYOffset + 100 <
-        document.documentElement.offsetHeight ||
-      loading
+      document.documentElement.offsetHeight
     ) {
       return;
-    } else setLoading(true);
+    } else moreVideos();
   }
 
   function moreVideos() {
@@ -36,7 +32,6 @@ export default function Video() {
       ...prev,
       ...results.slice(prev.length, 10 + prev.length)
     ]);
-    setLoading(false);
   }
 
   return (
@@ -98,14 +93,11 @@ export default function Video() {
         </div>
       ))}
 
-      {/* To top of page button only shows when all videos are loaded */}
-      {!loading && (
-        <div style={{ textAlign: "center", marginBottom: "1em" }}>
-          <button onClick={() => window.scrollTo(0, 0)} className="top">
-            Back to Top
-          </button>
-        </div>
-      )}
+      <div style={{ textAlign: "center", marginBottom: "1em" }}>
+        <button onClick={() => window.scrollTo(0, 0)} className="top">
+          Back to Top
+        </button>
+      </div>
     </div>
   );
 }
