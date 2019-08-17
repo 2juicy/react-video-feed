@@ -21,8 +21,14 @@ export default function Video({ results }) {
 
   useEffect(() => {
     if (!loading) return;
-    moreVideos();
-  }, [loading]);
+    (function() {
+      setVideos(prev => [
+        ...prev,
+        ...results.slice(prev.length, 10 + prev.length)
+      ]);
+      setLoading(false);
+    })();
+  }, [loading, results]);
 
   function handleScroll() {
     if (
@@ -31,14 +37,6 @@ export default function Video({ results }) {
     ) {
       return;
     } else setLoading(true);
-  }
-
-  function moreVideos() {
-    setVideos(prev => [
-      ...prev,
-      ...results.slice(prev.length, 10 + prev.length)
-    ]);
-    setLoading(false);
   }
 
   return (
