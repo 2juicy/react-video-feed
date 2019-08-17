@@ -21,13 +21,11 @@ export default function Video({ results }) {
 
   useEffect(() => {
     if (!loading) return;
-    (function() {
-      setVideos(prev => [
-        ...prev,
-        ...results.slice(prev.length, 10 + prev.length)
-      ]);
-      setLoading(false);
-    })();
+    setVideos(prev => [
+      ...prev,
+      ...results.slice(prev.length, 10 + prev.length)
+    ]);
+    setLoading(false);
   }, [loading, results]);
 
   function handleScroll() {
