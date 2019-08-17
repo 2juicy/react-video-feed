@@ -6,6 +6,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export default function Video({ results }) {
   const [videos, setVideos] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setVideos(results.slice(0, 10));
@@ -18,13 +19,18 @@ export default function Video({ results }) {
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
+  useEffect(() => {
+    if (!loading) return;
+    moreVideos();
+  }, [loading]);
+
   function handleScroll() {
     if (
       window.innerHeight + window.pageYOffset + 100 <
       document.documentElement.offsetHeight
     ) {
       return;
-    } else moreVideos();
+    } else setLoading(true);
   }
 
   function moreVideos() {
@@ -32,6 +38,7 @@ export default function Video({ results }) {
       ...prev,
       ...results.slice(prev.length, 10 + prev.length)
     ]);
+    setLoading(false);
   }
 
   return (
